@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="containerdiv">
+        <div class="header">
+          <div id="logo">My Library</div>
+        </div>
+        <div class="main">
+            <h1>Welcome to your Library</h1>
+           <div><button id="addbook" onclick="newBook()">+ Add Book</button></div>
+           <div style="display:none" id="formdiv" >
+            <form id="formbk" action="" method="">
+                <label for="title">Title:</label>
+                <input name="title" type="text" id="title" required/>
+                <label for="author">Author:</label>
+                <input type="text" id="author" required>
+                <label for="pages">Pages:</label>
+                <input type="number" id="pages" required>
+                <label for="toggle-state">Read:</label>
+                <input id="toggle-state" type="checkbox" data-toggle="toggle" data-style="ios" checked data-on="Yes" data-off="No">
+                
+                <input type="submit" id="submit" value="submit"/>
+                </form>
+        
+    </div>
+    </div>
+    <div id="displaybkdiv" style="display:none" >
+        <h4>Library</h4>
+        <div id="displaybk"></div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+    <script  src="script.js"></script>
+</body>
+</html>
